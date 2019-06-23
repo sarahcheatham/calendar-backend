@@ -11,12 +11,6 @@ const sequelize = new Sequelize(process.env.URI, {
     }
 })
 
-// const sequelize = new Sequelize('mysql://root:ilovemylife315@localhost:3306/tutor_calendar', {
-//     define: {
-//         timestamps: false
-//     }
-// });
-
 const User = UserModel(sequelize, Sequelize);
 const CalendarPost = sequelize.define('calendar_posts', {})
 const Calendar = CalendarModel(sequelize, Sequelize)

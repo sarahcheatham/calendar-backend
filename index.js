@@ -9,16 +9,6 @@ const PORT = process.env.PORT || 3000;
 // initializing express
 const app = express();
 app.use(bodyParser.json())
-// const connection = mysql.createConnection({
-//     host: 'localhost',
-//     user: 'root',
-//     password: 'ilovemylife315',
-//     database: 'tutor_calendar'
-// });
-
-// connection.connect((err) => {
-//     (err) ? console.log(err) : console.log(connection, "CONNECTED :)");
-// });
 
 app.use((req, res, next) => {
     res.header("Access-Control-Allow-Origin", "*");
